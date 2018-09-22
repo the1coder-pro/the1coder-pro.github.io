@@ -21,6 +21,12 @@ const seconds = document.querySelector('#seconds');
 
 //Words
 const words = [
+    'Youtube',
+    'yahoo',
+    'Dell',
+    'Lenovo',
+    'Plus',
+    'premium',
     'master',
     'hat',
     'river',
