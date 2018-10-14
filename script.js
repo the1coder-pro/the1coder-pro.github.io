@@ -7,7 +7,7 @@ function Searcher() {
     }else if (search == "WolfG"){
         window.location.href = "https://showme-gh-pages.github.io/wolf3d/"
     }else if (search == "CFE" && "Computer"){
-        window.location.href = "Computer.html"
+        window.location.href = "computer.html"
     }
  }
 
