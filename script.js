@@ -4,6 +4,8 @@ function Searcher() {
         window.location.href = "Rob/index.html";
     }else if (search == "wordbeater") {
         window.location.href = "Wordbeater/index.html"
+    }else if (search == "WolfG"){
+        window.location.href = "https://showme-gh-pages.github.io/wolf3d/"
     }
  }
 
