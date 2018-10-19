@@ -8,6 +8,8 @@ function Searcher() {
         window.location.href = "https://showme-gh-pages.github.io/wolf3d/"
     }else if (search == "CFE" && "Computer"){
         window.location.href = "computer.html"
+    }else if (search == "OS"){
+        window.location.href = "DoorOS.html"
     }
  }
 
