@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+#title {
+    padding-left: 50px;
+    font-family: 'Lobster', cursive;
+    font-size: 50px; 
+}
+
+#des {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#img_lamp {
+    float: left; 
+    margin-right: 10px; 
+    margin-bottom: 5px;
+    padding: 2px;
+}
+
+#By {
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+
+}
+
+#Features {
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+}
+
+#trytitle {
+    margin: 50px;
+    padding: 10px;
+    border: 5px rgb(252, 229, 27) solid;
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+}
+
+#tryit {
+    padding: 50px;
+}
+
+#tryitbtn {
+    padding: 4px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#LampImg {
+    margin: 50px;
+    padding: 20px;
+    margin-left: 50px;
+}
