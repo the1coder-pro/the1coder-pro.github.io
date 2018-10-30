@@ -10,7 +10,7 @@ function Searcher() {
         window.location.href = "computer.html"
     }else if (search == "OS"){
         window.location.href = "DoorOS.html"
-    }esle if (search == "Lamp"){
+    }else if (search == "Lamp"){
         window.location.href = "Lamp/index.html"
     }
  }
