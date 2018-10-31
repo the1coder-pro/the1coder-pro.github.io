@@ -12,6 +12,8 @@ function Searcher() {
         window.location.href = "DoorOS.html"
     }else if (search == "Lamp"){
         window.location.href = "Lamp/index.html"
+    }else if (search == "Dice"){
+        window.location.href = "Dice/index.html"
     }
  }
 
