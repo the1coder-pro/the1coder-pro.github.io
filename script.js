@@ -6,7 +6,7 @@ function Searcher() {
         window.location.href = "Wordbeater/index.html"
     }else if (search == "WolfG"){
         window.location.href = "https://showme-gh-pages.github.io/wolf3d/"
-    }else if (search == "CFE" && "Computer"){
+    }else if (search == "CFE"){
         window.location.href = "computer.html"
     }else if (search == "OS"){
         window.location.href = "DoorOS.html"
@@ -14,6 +14,8 @@ function Searcher() {
         window.location.href = "Lamp/index.html"
     }else if (search == "Dice"){
         window.location.href = "Dice/index.html"
+    }else if (search == "CFE2"){
+        window.location.href = "Computer2.html"
     }
  }
 
