@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <h1 id="Title">GameLess</h1>
+    <title>GameLess</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+canvas {
+    border:1px solid #d3d3d3;
+    background-color: #f1f1f1;
+    margin: 50px;
+    float: left;
+}
+#DES {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#Title {
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    text-align: left;
+}
+</style>
+</head>
+<body onload="startGame()">
+    <script>
+var myGamePiece;
+
+function startGame() {
+    myGamePiece = new component(30, 30, "red", 10, 120);
+    myGameArea.start();
+}
+
+var myGameArea = {
+    canvas : document.createElement("canvas"),
+    start : function() {
+        this.canvas.width = 580;
+        this.canvas.height = 570;
+        this.context = this.canvas.getContext("2d");
+        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+        this.interval = setInterval(updateGameArea, 20);
+    },
+    clear : function() {
+        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    }
+}
+
+function component(width, height, color, x, y) {
+    this.width = width;
+    this.height = height;
+    this.speedX = 0;
+    this.speedY = 0;
+    this.x = x;
+    this.y = y;    
+    this.update = function() {
+        ctx = myGameArea.context;
+        ctx.fillStyle = color;
+        ctx.fillRect(this.x, this.y, this.width, this.height);
+    }
+    this.newPos = function() {
+        this.x += this.speedX;
+        this.y += this.speedY;        
+    }    
+}
+
+function updateGameArea() {
+    myGameArea.clear();
+    myGamePiece.newPos();    
+    myGamePiece.update();
+}
+
+function moveup() {
+    myGamePiece.speedY -= 1; 
+}
+
+function movedown() {
+    myGamePiece.speedY += 1; 
+}
+
+function moveleft() {
+    myGamePiece.speedX -= 1; 
+}
+
+function moveright() {
+    myGamePiece.speedX += 1; 
+}
+
+function Yellow(){
+    myGamePiece = new component(30, 30, "yellow", 10, 120);
+}
+
+function Green(){
+    myGamePiece = new component(30, 30, "green", 10, 120);
+}
+
+function Pink(){
+    myGamePiece = new component(30, 30, "pink", 10, 120);
+}
+
+function Red(){
+    myGamePiece = new component(30, 30, "red", 10, 120);
+}
+
+function Blue(){
+    myGamePiece = new component(30, 30, "blue", 10, 120);
+}
+
+function Gray(){
+    myGamePiece = new component(30, 30, "gray", 10, 120);
+}
+
+window.addEventListener("keydown", checkKeyPressed, false);
+
+function checkKeyPressed(e) {
+    //Up
+   if(e.keyCode == "87") {
+       moveup()
+    //Down
+   }else if(e.keyCode == "83"){
+    movedown()
+    //left
+   }else if(e.keyCode == "65"){
+       moveleft()
+    //right
+   }else if(e.keyCode == "68"){
+       moveright()
+//<== Arrorw ==>
+    //up ->
+   }else if(e.keyCode == "38") {
+    moveup()
+    //Down ->
+    }else if(e.keyCode == "40"){
+     movedown()
+    //left ->
+    }else if(e.keyCode == "37"){
+    moveleft()
+    //right ->
+    }else if(e.keyCode == "39"){
+    moveright()
+    }
+}
+
+        
+    </script>
+    <p id="DES">
+        <br>W For Up</br>
+        <br>S For Down</br>
+        <br>A For Left</br>
+        <br>F For Right</br>
+    </p>
+    <button style=color:yellow onclick="Yellow()">Yellow</button>
+    <button style=color:green onclick="Green()">Green</button>
+    <button style=color:pink onclick="Pink()">Pink</button>
+    <button style=color:red onclick="Red()">Red</button>
+    <button style=color:blue onclick="Blue()">Blue</button>
+    <button style=color:gray onclick="Gray()">Gray</button>
+</body>
+</html>
