@@ -16,6 +16,8 @@ function Searcher() {
         window.location.href = "Dice/index.html"
     }else if (search == "CFE2"){
         window.location.href = "Computer2.html"
+    }else if (search == "GL"){
+        window.location.href = "GameLess.html"
     }
  }
 
