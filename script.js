@@ -18,6 +18,8 @@ function Searcher() {
         window.location.href = "Computer2.html"
     }else if (search == "GL"){
         window.location.href = "GameLess.html"
+    }else if (search == "Shelly"){
+        window.location.href = "Shelly/index.html"
     }else{
     window.location.href = "https://www.google.com.sa/search?q=" + search;
     }
