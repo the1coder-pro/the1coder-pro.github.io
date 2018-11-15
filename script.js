@@ -20,6 +20,8 @@ function Searcher() {
         window.location.href = "GameLess.html"
     }else if (search == "Shelly"){
         window.location.href = "Shelly/index.html"
+    }else if (search == "RPS"){
+        window.location.href = "RPS/index.html"
     }else{
     window.location.href = "https://www.google.com.sa/search?q=" + search;
     }
