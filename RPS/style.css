@@ -1,0 +1,19 @@
+#Btn {
+    color: Black;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+#Result, #vs, #Equal, #BotPlace{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    padding: 20px;
+    margin: 20px;
+}
+#WhoWin {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 33px;
+    padding: 20px;
+    margin: 20px;
+}
