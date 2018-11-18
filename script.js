@@ -22,6 +22,8 @@ function Searcher() {
         window.location.href = "Shelly/index.html"
     }else if (search == "RPS"){
         window.location.href = "RPS/index.html"
+    }else if (search == "Menu"){
+        window.location.href = "Menu/index.html"
     }else{
     window.location.href = "https://www.google.com.sa/search?q=" + search;
     }
