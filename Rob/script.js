@@ -1,3 +1,9 @@
+//Variables
+version = '1.2';
+codename = 'Flowers';
+name = "Rob";
+from, by = 'Gray.inc';
+
 //Check Function about who use Rob
 function check(){
 var password = prompt("enter the Password Please")
