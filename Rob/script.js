@@ -23,6 +23,8 @@ window.addEventListener("keydown", checkKeyPressed, false);
 function checkKeyPressed(e) {
    if (e.keyCode == "83") {
        randomWords(answers)
+   }else if (e.keyCode == "17" + "27"){
+        alert("Settings \nVersion : 1.2 \nCodeName : KeyBoard")
    }
 }
 
@@ -33,8 +35,8 @@ function Ask(Questine){
     }else if (Questine == "change"){
         document.getElementById('Rob').src="Robgray.png";
     }else if (Questine == "default"){
-        document.getElementById('Rob').src="Robpixel.png";
-    }else {
+        document.getElementById('Rob').src="Robpixel.png"
+    else {
         console.log("sorry");
         }
     }
