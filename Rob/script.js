@@ -2,7 +2,7 @@
 version = '1.2';
 codename = 'Flowers';
 name = "Rob";
-from, by = 'Gray.inc';
+by = 'Gray.inc';
 
 //Check Function about who use Rob
 function check(){
