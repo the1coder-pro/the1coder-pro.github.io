@@ -42,7 +42,7 @@ function Ask(Questine){
         document.getElementById('Rob').src="Robgray.png";
     }else if (Questine == "default"){
         document.getElementById('Rob').src="Robpixel.png"
-    else {
+    }else {
         console.log("sorry");
         }
     }
