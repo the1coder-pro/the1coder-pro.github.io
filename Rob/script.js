@@ -3,7 +3,7 @@ version = '1.2';
 codename = 'Flowers';
 name = "Rob";
 by = 'Gray.inc';
-var ROB = document.getElementById('Rob')
+
 
 //Check Function about who use Rob
 function check(){
@@ -39,6 +39,7 @@ function checkKeyPressed(e) {
 
 //Ask Function for More Fun
 function Ask(Questine){
+    var ROB = document.getElementById('Rob')
     if (Questine == "hi"){
         randomWords(answers)
     }else if (Questine == "walle"){
