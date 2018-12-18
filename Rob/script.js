@@ -9,7 +9,9 @@ var ROB = document.getElementById('Rob');
 function check(){
 var password = prompt("enter the Password Please")
 if (password == "devmut"){
-    confirm("You'r my Father, it's You ?")
+    if (confirm("You'r my Father, it's You ?") == true){
+    console.log("Yes, Your Are my Father !")
+}
 }else {
     alert("Welcome to Rob")
     }
@@ -40,7 +42,7 @@ function Ask(Questine){
     if (Questine == "hi"){
         randomWords(answers)
     }else if (Questine == "walle"){
-        ROB.src="Wall-E.png";
+        document.getElementById('Rob').src = 'Wall-E.png';
     }else if (Questine == "default"){
         ROB.src="Robpixel.png";
     }else if (Questine == "Modern" || "New"){
