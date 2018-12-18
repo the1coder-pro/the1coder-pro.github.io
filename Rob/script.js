@@ -3,6 +3,7 @@ version = '1.2';
 codename = 'Flowers';
 name = "Rob";
 by = 'Gray.inc';
+var ROB = document.getElementById('Rob');
 
 //Check Function about who use Rob
 function check(){
@@ -39,9 +40,11 @@ function Ask(Questine){
     if (Questine == "hi"){
         randomWords(answers)
     }else if (Questine == "walle"){
-        document.getElementById('Rob').src="Wall-E.png";
+        ROB.src="Wall-E.png";
     }else if (Questine == "default"){
-        document.getElementById('Rob').src="Robpixel.png"
+        ROB.src="Robpixel.png";
+    }else if (Questine == "Modern" || "New"){
+        ROB.src = "Rob.png";
     }else {
         console.log("sorry");
         }
