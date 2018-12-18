@@ -47,6 +47,8 @@ function Ask(Questine){
         ROB.src="Robpixel.png";
     }else if (Questine == "Modern" || "New"){
         ROB.src = "Rob.png";
+    }else if (Questine == "R2D2"){
+        ROB.src = "R2D2.png";
     }else {
         console.log("sorry");
         }
