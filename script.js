@@ -24,6 +24,8 @@ function Searcher() {
         window.location.href = "RPS/index.html"
     }else if (search == "Menu"){
         window.location.href = "Menu/index.html"
+    }else if (search == "Registery"){
+        window.location.href = "Registery/index.html"
     }else{
     window.location.href = "https://www.google.com.sa/search?q=" + search;
     }
