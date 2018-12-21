@@ -9,3 +9,7 @@ h2 {
     font-family: 'Major Mono Display', monospace;
     font-size: 30px;
 }
+h3, p {
+    font-family: 'Major Mono Display', monospace;
+    font-size: 20px;
+}
