@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
+
+#titleReg {
+    font-family: 'Major Mono Display', monospace;
+    font-size: 55px;
+}
+
+h2 {
+    font-family: 'Major Mono Display', monospace;
+    font-size: 30px;
+}
