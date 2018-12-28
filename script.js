@@ -26,6 +26,8 @@ function Searcher() {
         window.location.href = "Menu/index.html"
     }else if (search == "Registery"){
         window.location.href = "Registery/index.html"
+    }else if (search == "Animal"){
+        window.location.href = "https://www.google.com/search?q=animal+sounds"
     }else{
     window.location.href = "https://www.google.com.sa/search?q=" + search;
     }
