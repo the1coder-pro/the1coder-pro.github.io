@@ -1,9 +1,9 @@
 //Variables
-version = '1.2';
-codename = 'Flowers';
+version = 2.0;
+codename = "SparkleStar";
 name = "Rob";
 by = 'Gray.inc';
-
+child = "Remindero";
 
 //Check Function about who use Rob
 function check(){
@@ -27,13 +27,37 @@ function randomWords(something){
     document.getElementById("place").innerHTML = something[randomtext];
 }
 
+//Make Rob Speech & Listen
+function SayHello(Answer){
+    var answers = ["Yes", "No", "i don't know", "Of Coruse not", "Say Again"];
+
+    let speech = new p5.Speech();
+    speech.speak('Hello');
+    
+    //Speech Recognition
+    let SpeechRec = new p5.SpeechRec('en-US', gotSpeech);
+    SpeechRec.start(true, false);
+
+    //Check For The Words
+    if(SpeechRec.resultValue){
+        let input = SpeechRec.resultString;
+        console.log(input)
+    }
+
+    function gotSpeech(){
+        var place = document.getElementById("place");
+        randomWords(answers);
+        speech.speak(place.innerHTML)
+    }
+}
+
 //Check what button is pressed
 window.addEventListener("keydown", checkKeyPressed, false);
 function checkKeyPressed(e) {
    if (e.keyCode == "83") {
        randomWords(answers)
-   }else if (e.keyCode == "17" + "88"){
-        alert("Settings \nVersion : 1.2 \nCodeName : KeyBoard")
+   }else if (e.keyCode == "88"){
+        alert("Settings \nVersion : 2.0 \nCodeName : " + codename)
    }
 }
 
@@ -52,9 +76,5 @@ function Ask(Questine){
         ROB.src = "R2D2.png";
     }else {
         console.log("sorry");
-        }
     }
-
-
-
-
+}
