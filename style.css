@@ -1,4 +1,4 @@
-#Bob {
+#img {
     padding: 10px;
     margin-top: 50px;
     align-items: center;
@@ -6,7 +6,6 @@
     margin-left: auto;
     margin-right: auto;
     align-self: auto;
-    width: 70%;
 }
 
 #search {
@@ -16,28 +15,28 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    align-self: auto; 
+    align-self: auto;
 }
 
-#searchbtn {
-    font-family: Arial, Helvetica, sans-serif;
+#Btn {
     width: 20%;
-    font-size: 20px;
-    margin-top: 10px;
+    font-size: 30px;
     align-items: center;
     display: block;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    align-self: auto; 
+    align-self: auto;
+    color: white;
+    background-color: #1565c0;
+    border: 10px #1565c0 solid;
 }
 
-#by {
-    font-family: Arial, Helvetica, sans-serif;
-    width: 10%;
-    font-size: 10px;
-    text-align: center;
-    align-items: center;
+#By {
     margin-left: auto;
     margin-right: auto;
-    align-self: auto; 
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
