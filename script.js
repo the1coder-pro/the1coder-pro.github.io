@@ -28,6 +28,8 @@ function Searcher() {
         window.location.href = "Registery/index.html"
     }else if (search == "Animal"){
         window.location.href = "https://www.google.com/search?q=animal+sounds"
+    }else if (search == "About"){
+        window.location.href = "about/index.html"
     }else{
     window.location.href = "https://www.google.com.sa/search?q=" + search;
     }
