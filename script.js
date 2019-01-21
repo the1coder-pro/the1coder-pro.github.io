@@ -30,6 +30,8 @@ function Searcher() {
         window.location.href = "https://www.google.com/search?q=animal+sounds"
     }else if (search == "About"){
         window.location.href = "about/index.html"
+    }else if (search == "WhoUs"){
+        window.location.href = "Who Us/index.html"
     }else{
     window.location.href = "https://www.google.com.sa/search?q=" + search;
     }
