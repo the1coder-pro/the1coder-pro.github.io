@@ -32,6 +32,8 @@ function Searcher() {
         window.location.href = "about/index.html"
     }else if (search == "WhoUs"){
         window.location.href = "Who Us/index.html"
+    }else if (search == "Coffee" && "coffee"){
+        window.location.href = "Search/Coffee.html"
     }else{
     window.location.href = "https://www.google.com.sa/search?q=" + search;
     }
