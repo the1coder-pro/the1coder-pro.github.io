@@ -34,6 +34,8 @@ function Searcher() {
         window.location.href = "Who Us/index.html"
     }else if (search == "Coffee" && "coffee"){
         window.location.href = "Search/Coffee.html"
+    }else if (search == "Coffee" && "coffee"){
+        window.location.href = "Search/Emoji/Emoji.html"
     }else{
     window.location.href = "https://www.google.com.sa/search?q=" + search;
     }
