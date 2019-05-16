@@ -3,10 +3,9 @@
 <h1 id="PageTitle1">Pay Setup</h1>
 <!-- Setup -->
 <script>
-
 // Pay Setup
 function Load(){
-	var title = "Payments";
+	var title = "PayShop Payments";
 	var Title1 = document.getElementById('PageTitle').innerHTML = title;
 	var Title2 = document.getElementById('PageTitle1').innerHTML = title;
 	// Name
@@ -33,50 +32,33 @@ function Load(){
 	document.getElementById('SetupButton').style.display='none';
 	document.getElementById("PayButton").style.display='block';
 }
-
 function ReadyToPay(){
 	// Pricing
 	var PersonValue = document.getElementById('Value');
 	var inPersonValue = document.getElementById('InValue');
 	var inPrice = document.getElementById('InPrice');
+	var inName = document.getElementById('InName');
 	//Successed
 	if (inPrice.value <= inPersonValue.value){
 		alert("Payment Succsessed")
+		alert("this your Payment Receipt")
 		var Count = inPersonValue.value - inPrice.value
 		PersonValue.innerHTML = "Value : " + Count;
+		var Receipt1 = `      Receipt
+						====================
+						Name : ${InName.value}
+						Price : ${inPrice.value}$
+						=====================
+						Credit : ${inPersonValue.value}$
+						The Rest : ${Count}$
+						=====================
+						     Thank  You `
+		alert(Receipt1)
 	//Denied
-	}else if (inPrice.value != inPersonValue.value){
+	}else if (inPrice.value > inPersonValue.value){
 		alert("Payment Denied")
 	}
 }
-
-// function Reload(){
-// 	var title = "Pay Setup";
-// 	var Title1 = document.getElementById('PageTitle').innerHTML = title;
-// 	var Title2 = document.getElementById('PageTitle1').innerHTML = title;
-// 	// Name
-// 	var inName = document.getElementById('InName');
-// 	var Name = document.getElementById('Name');
-// 	if (inName.value == inName.value){
-// 		Name.innerHTML = "Name : " + inName.value;
-// 		document.getElementById("InName").style.display='block';
-// 	}
-// 	// Price
-// 	var inPrice = document.getElementById('InPrice');
-// 	var Price = document.getElementById('Price');
-// 	if (inPrice.value == inPrice.value){
-// 		Price.innerHTML = "Price : " + inPrice.value;
-// 		document.getElementById("InPrice").style.display='block';
-// 	}
-// 	//Value
-// 	var inPersonValue = document.getElementById('InValue');
-// 	var PersonValue = document.getElementById('Value');
-// 	PersonValue.innerHTML = "Value : " + inPersonValue.value;
-
-// 	document.getElementById('SetupButton').style.display='block';
-// 	document.getElementById("PayButton").style.display='none';
-// }
-
 
 </script>
 <h3 id="Name">Object Name</h3>
@@ -89,5 +71,21 @@ function ReadyToPay(){
 <input id="InValue" type="number">
 <button id="SetupButton" onclick="Load()">Setup</button>
 <button id="PayButton"  style="display: none;" onclick="ReadyToPay()">Pay</button>
-<!-- <button id="BackButton" style="display: none;" onclick="Reload()">Back</button> -->
+<!-- Style -->
+<style>
+	h3, h2{
+		text-align: center;
+		width: 50%;
+	}
+	input {
+		margin-left: auto;
+    	margin-right: auto;
+    	width: 8em
+    	vertical-align: middle
+	}
+	button {
+		align-items: center;
+		padding: 6px;
+	}
+</style>
 </html>
