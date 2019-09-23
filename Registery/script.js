@@ -8,7 +8,7 @@ function Check() {
     //Accounts
     var Mutawa = {name:"Mutawa", id:'A0', job:"Developer", password:"M2M1"}
     var Ahmed = {name:"Ahmed", id:"C2", job:"Gamer", password:"Ah12"}
-    var Ali = {name:"Ali", id:"B1", job:"Drawer", password:"Ali2"}
+    var Ali = {name:"Ali", id:"B1", job:"Artist", password:"Ali2"}
     //Checking
     //Mutawa
     if(InpuText == Mutawa.name && InpuPass == Mutawa.password){
