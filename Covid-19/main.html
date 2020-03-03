@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>COVID-19</title>
+</head>
+<style>
+    #pay {
+        border: red solid 1px;
+        margin-left: 100px;
+        margin-right: 900px;
+        padding-left: 50px;
+        padding-right: 30px;
+        position:absolute;
+        top: 300px;
+    }
+
+    #colorex {
+        position: absolute;
+        right: 30px;
+    }
+
+
+    #title {
+        text-align: center;
+        border: red 1px solid;
+        border-radius: 10px;
+        margin-right: 490px;
+        margin-left: 490px;
+        margin-bottom: 20px;
+    }
+
+    #infoVirus {
+        text-align: center;
+        border: 1px solid red;
+        padding: 10px;
+        margin-left: 500px;
+        margin-right: 500px;
+    }
+
+    #killinfo {
+        text-align: center;
+        border: 1px dotted red;
+        padding: 30px;
+        margin-left: 500px;
+        margin-right: 500px;
+    }
+
+</style>
+<body>
+    <img src="land3.png">
+    <img src="vision.png" id="vision">
+    <div id="colorex">
+    <img src="colorex.gif" alt="the Power of Colorex">
+    <h2>The Power of ColorRex</h2>
+    </div>
+    <div id="title">
+        <h1 id="clicked">CoronaVirus</h1>
+        <h2>killing Website</h2>
+        <br>
+    </div>
+    <div id="infoVirus">
+        <h2>What is CoronaVirus ?</h2>
+        <h3>CoronaVirus or COVID-19 is a Virus,
+        that Came from China the country that eat everything from 7shrat to elephants</h3>
+    </div>
+    <br>
+    <div id="pay">
+        <h1>Buy a Bottle</h1>
+        <h1>5$ - Free</h1>
+        <h3>Card Number</h3>
+        <input id="acc" type="number">
+        <br>
+        <h3>Password</h3>
+        <input id="pass" type="password" maxlength="4">
+        <button id="btnbuy">Buy</button>
+        <h3 id="Status"></h3>
+    </div>
+    <br>
+    <div id="killinfo">
+    <h2>how did we kill it ?</h2>
+    <h3>we used Clorox, because he kills everything from poops to human-body, so its powerful & we think if he can kill COVID-19 or not, then we tried and thanks God it worked so we published this website to help you</h3>
+    </div>
+    <footer>Created By : @The1coder</footer>
+</body>
+
+<script>
+    document.getElementById("btnbuy").addEventListener("click", 
+    ()=> {
+        if(document.getElementById("acc").value == 55455 && document.getElementById("pass").value == 1234){
+            document.getElementById("Status").innerHTML = "succssuful";
+            alert("Concagroulation you have Buy a Colorex Bottle")
+        }else {
+            document.getElementById("Status").innerHTML = "Error";
+        }
+    })
+
+    document.getElementById("clicked").addEventListener("dblclick", ()=> {
+        document.getElementById("clicked").innerHTML = "CoronaVirus"
+        console.log("acc: 55455, pass: 1234")
+    })
+    document.getElementById("clicked").addEventListener("drag", ()=> {
+        document.getElementById("clicked").innerHTML = "Stop !!!!, you will get the Virus";
+    })
+</script>
+
+</html>
