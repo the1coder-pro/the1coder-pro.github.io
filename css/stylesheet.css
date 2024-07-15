@@ -77,7 +77,7 @@ Fonts below here are used only by the loc tool and don't appear in the game.
 ----------------------------------------------------------------------------------
 */
 
-@font-face { font-family: 'fallback'; src: url('fallback.ttf'); }
+@font-face { font-family: 'fallback'; src: url('PixelAE-Regular.ttf'); }
 
 /*---- small -------------------------------------------------*/
 @font-face { font-family: 'small'; src: url('53Veda-U--misaki_gothic.ttf'); }
