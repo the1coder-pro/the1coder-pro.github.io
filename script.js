@@ -40,7 +40,7 @@ function Searcher() {
         window.location.href = "Search/Emoji/Emoji.html"
     }else if (search == "=Pay"){
         window.location.href = "Pay/index.html"
-    }if (search == "=COVID"){
+    }else if (search == "=COVID"){
         window.location.href = "Covid-19/main.html"
     }else{
     window.location.href = "https://www.google.com.sa/search?q=" + search;
