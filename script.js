@@ -1,5 +1,6 @@
 function Searcher() {
     var search = document.getElementById("search").value;
+    var search = "=" + search;
     if (search == "Rob"){
         window.location.href = "Rob/index.html";
     }else if (search == "wordbeater") {
